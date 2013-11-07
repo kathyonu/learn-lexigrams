@@ -5,22 +5,37 @@
     <title><%= content_for?(:title) ? yield(:title) : "Learn Rails" %></title>
     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Learn Rails" %>">
     <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
+    <%# Modernizr is required for Zurb Foundation 4 %>
+    <%= javascript_include_tag "vendor/custom.modernizr" %>
     <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
     <%= csrf_meta_tags %>
   </head>
   <body>
-    <div class="container">
-      <header>
+    <%# application layout styled for Zurb Foundation 4 %>
+    <header>
+      <nav class="top-bar">
+        <ul class="title-area">
+          <li class="name"><Learning da Ruby on Rails</li>
+          <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+        </ul>
+      <section class="top-bar-section">
         <%= render 'layouts/navigation' %>
-      </header>
-      <main role="main">
+      </section>
+    </nav>
+    </header>
+    <main role="main">
+      <div class="container">
         <div class="content">
-          <%= render 'layouts/messages' %>
-          <%= yield %>
+          <div class="row">
+            <div class="twelve columns">
+              <%= render 'layouts/messages' %>
+              <%= yield %>
+            </div>
+          </div>
+          <footer>
+          </footer>
         </div>
-      </main>
-      <footer>
-      </footer>
-    </div>
+      </div>
+    </main>
   </body>
 </html>
