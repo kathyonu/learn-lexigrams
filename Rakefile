@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-LearnRails::Application.load_tasks
+LearnLexigrams::Application.load_tasks

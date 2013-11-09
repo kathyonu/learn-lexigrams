@@ -1,5 +1,5 @@
 class UserMailer < ActionMailer::Base
-  default from: "do-not-reply@example.com"
+  default from: "lexigram@goodworksonearth.org"
   
   def contact_email(contact)
     @contact = contact

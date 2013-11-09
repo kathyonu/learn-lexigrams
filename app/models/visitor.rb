@@ -1,6 +1,5 @@
 class Contact < ActiveRecord::Base
   has_no_table
-
   column :name, :string
   column :email, :string
   column :content, :string
@@ -13,9 +12,9 @@ class Contact < ActiveRecord::Base
 
   def update_spreadsheet
     connection = GoogleDrive.login(ENV["GMAIL_USERNAME"], ENV["GMAIL_PASSWORD"])
-    ss = connection.spreadsheet_by_title('Learn-Rails-Example')
+    ss = connection.spreadsheet_by_title('Learn-Lexigrams')
     if ss.nil?
-      ss = connection.create_spreadsheet('Learn-Rails-Example')
+      ss = connection.create_spreadsheet('Learn-Lexigrams')
     end
       ws = ss.worksheets[0]
       last_row = 1 + ws.num_rows
