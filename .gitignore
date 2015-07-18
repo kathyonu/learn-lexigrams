@@ -22,6 +22,7 @@
 
 # Ignore application configuration
 /config/application.yml
+/conig/local_env.yml
 
 # Ignore instructions folder
 /instructions/*.txt

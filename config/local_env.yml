@@ -1,0 +1,21 @@
+# Be sure to restart your server when you modify this file.
+
+# Add account settings and API keys here.
+# This file should be listed in .gitignore to keep your settings secret!
+# Each entry gets set as a local environment variable.
+# This file overrides ENV variables in the Unix shell.
+# For example, setting:
+# GMAIL_USERNAME: 'Your_Gmail_Username'
+# makes 'Your_Gmail_Username' available as ENV["GMAIL_USERNAME"]
+
+
+ADMIN_NAME: 'Admin'
+ADMIN_EMAIL: 'lexigram@goodworksonearth.org'
+ADMIN_PASSWORD: '74aceeinpst47'
+GMAIL_USERNAME: 'kathyonu@gmail.com'
+GMAIL_PASSWORD: '691fb59fc209ef79c09a0ba89fa49cb59ac29ub39fc99ad7969'
+MAILCHIMP_API_KEY: '409d7141778bf3fa19580e59047e4560-us5'
+MAILCHIMP_LIST_ID: '1b070b108b'
+DOMAIN_NAME: 'learn-lexigrams.herokuapp.com'
+OWNER_EMAIL: 'lexigram@goodworksonearth.org'
+SECRET_KEY_BASE: 'edcfd6c791273e505727efffd6c4fbdf631c97363265576006cd2d0007ff2c7afd1e3465a8e0c95af27d31cb9513855fe13b271f756f2065deb43de571275216'
